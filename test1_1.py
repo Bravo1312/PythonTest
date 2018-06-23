@@ -1,6 +1,5 @@
 import random
 
-
 capitals = {'Alabama':'Montgomery', 
 			'vAlabama':'Montgomery',
 			'Alaska':'Juneau',
