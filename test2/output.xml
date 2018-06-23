@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.6.4 on cygwin)" generated="20180530 17:06:38.829">
+<suite id="s1" name="Test2" source="/home/QiZhang/PythonTest/MyTest/test2/test2.rst">
+<test id="s1-t1" name="GetTime">
+<kw name="Get Time" library="BuiltIn">
+<doc>Returns the given time in the requested format.</doc>
+<assign>
+<var>${t}</var>
+</assign>
+<msg timestamp="20180530 17:06:38.883" level="INFO">${t} = 2018-05-30 17:06:38</msg>
+<status status="PASS" starttime="20180530 17:06:38.883" endtime="20180530 17:06:38.883"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${t}</arg>
+</arguments>
+<msg timestamp="20180530 17:06:38.884" level="INFO">2018-05-30 17:06:38</msg>
+<status status="PASS" starttime="20180530 17:06:38.883" endtime="20180530 17:06:38.884"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20180530 17:06:40.884" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20180530 17:06:38.884" endtime="20180530 17:06:40.886"></status>
+</kw>
+<kw name="Get Time" library="BuiltIn">
+<doc>Returns the given time in the requested format.</doc>
+<assign>
+<var>${t}</var>
+</assign>
+<msg timestamp="20180530 17:06:40.887" level="INFO">${t} = 2018-05-30 17:06:40</msg>
+<status status="PASS" starttime="20180530 17:06:40.886" endtime="20180530 17:06:40.888"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${t}</arg>
+</arguments>
+<msg timestamp="20180530 17:06:40.889" level="INFO">2018-05-30 17:06:40</msg>
+<status status="PASS" starttime="20180530 17:06:40.888" endtime="20180530 17:06:40.889"></status>
+</kw>
+<status status="PASS" starttime="20180530 17:06:38.882" endtime="20180530 17:06:40.890" critical="yes"></status>
+</test>
+<test id="s1-t2" name="TestIf">
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<assign>
+<var>${a}</var>
+</assign>
+<msg timestamp="20180530 17:06:40.892" level="INFO">${a} = 10</msg>
+<status status="PASS" starttime="20180530 17:06:40.892" endtime="20180530 17:06:40.893"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${a}&gt;=90</arg>
+<arg>log</arg>
+<arg>Very Good!</arg>
+<arg>ELSE IF</arg>
+<arg>${a}&gt;=70</arg>
+<arg>log</arg>
+<arg>Good!</arg>
+<arg>ELSE IF</arg>
+<arg>${a}&gt;=60</arg>
+<arg>log</arg>
+<arg>Just So So!</arg>
+</arguments>
+<status status="PASS" starttime="20180530 17:06:40.893" endtime="20180530 17:06:40.895"></status>
+</kw>
+<status status="PASS" starttime="20180530 17:06:40.890" endtime="20180530 17:06:40.896" critical="yes"></status>
+</test>
+<test id="s1-t3" name="TestFor">
+<kw name="${i} IN RANGE [ 10 ]" type="for">
+<kw name="${i} = 0" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<msg timestamp="20180530 17:06:40.899" level="INFO">0</msg>
+<status status="PASS" starttime="20180530 17:06:40.898" endtime="20180530 17:06:40.899"></status>
+</kw>
+<status status="PASS" starttime="20180530 17:06:40.898" endtime="20180530 17:06:40.899"></status>
+</kw>
+<kw name="${i} = 1" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<msg timestamp="20180530 17:06:40.900" level="INFO">1</msg>
+<status status="PASS" starttime="20180530 17:06:40.900" endtime="20180530 17:06:40.900"></status>
+</kw>
+<status status="PASS" starttime="20180530 17:06:40.899" endtime="20180530 17:06:40.900"></status>
+</kw>
+<kw name="${i} = 2" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<msg timestamp="20180530 17:06:40.901" level="INFO">2</msg>
+<status status="PASS" starttime="20180530 17:06:40.900" endtime="20180530 17:06:40.901"></status>
+</kw>
+<status status="PASS" starttime="20180530 17:06:40.900" endtime="20180530 17:06:40.901"></status>
+</kw>
+<kw name="${i} = 3" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<msg timestamp="20180530 17:06:40.902" level="INFO">3</msg>
+<status status="PASS" starttime="20180530 17:06:40.901" endtime="20180530 17:06:40.902"></status>
+</kw>
+<status status="PASS" starttime="20180530 17:06:40.901" endtime="20180530 17:06:40.902"></status>
+</kw>
+<kw name="${i} = 4" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<msg timestamp="20180530 17:06:40.902" level="INFO">4</msg>
+<status status="PASS" starttime="20180530 17:06:40.902" endtime="20180530 17:06:40.903"></status>
+</kw>
+<status status="PASS" starttime="20180530 17:06:40.902" endtime="20180530 17:06:40.903"></status>
+</kw>
+<kw name="${i} = 5" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<msg timestamp="20180530 17:06:40.903" level="INFO">5</msg>
+<status status="PASS" starttime="20180530 17:06:40.903" endtime="20180530 17:06:40.904"></status>
+</kw>
+<status status="PASS" starttime="20180530 17:06:40.903" endtime="20180530 17:06:40.904"></status>
+</kw>
+<kw name="${i} = 6" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<msg timestamp="20180530 17:06:40.904" level="INFO">6</msg>
+<status status="PASS" starttime="20180530 17:06:40.904" endtime="20180530 17:06:40.904"></status>
+</kw>
+<status status="PASS" starttime="20180530 17:06:40.904" endtime="20180530 17:06:40.904"></status>
+</kw>
+<kw name="${i} = 7" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<msg timestamp="20180530 17:06:40.905" level="INFO">7</msg>
+<status status="PASS" starttime="20180530 17:06:40.905" endtime="20180530 17:06:40.905"></status>
+</kw>
+<status status="PASS" starttime="20180530 17:06:40.904" endtime="20180530 17:06:40.905"></status>
+</kw>
+<kw name="${i} = 8" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<msg timestamp="20180530 17:06:40.905" level="INFO">8</msg>
+<status status="PASS" starttime="20180530 17:06:40.905" endtime="20180530 17:06:40.906"></status>
+</kw>
+<status status="PASS" starttime="20180530 17:06:40.905" endtime="20180530 17:06:40.906"></status>
+</kw>
+<kw name="${i} = 9" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${i}</arg>
+</arguments>
+<msg timestamp="20180530 17:06:40.906" level="INFO">9</msg>
+<status status="PASS" starttime="20180530 17:06:40.906" endtime="20180530 17:06:40.906"></status>
+</kw>
+<status status="PASS" starttime="20180530 17:06:40.906" endtime="20180530 17:06:40.906"></status>
+</kw>
+<status status="PASS" starttime="20180530 17:06:40.898" endtime="20180530 17:06:40.906"></status>
+</kw>
+<status status="PASS" starttime="20180530 17:06:40.896" endtime="20180530 17:06:40.907" critical="yes"></status>
+</test>
+<test id="s1-t4" name="TestEvaluate">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>random.randint(1000, 9999)</arg>
+<arg>random</arg>
+</arguments>
+<assign>
+<var>${d}</var>
+</assign>
+<msg timestamp="20180530 17:06:40.908" level="INFO">${d} = 1526</msg>
+<status status="PASS" starttime="20180530 17:06:40.907" endtime="20180530 17:06:40.908"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${d}</arg>
+</arguments>
+<msg timestamp="20180530 17:06:40.908" level="INFO">1526</msg>
+<status status="PASS" starttime="20180530 17:06:40.908" endtime="20180530 17:06:40.908"></status>
+</kw>
+<status status="PASS" starttime="20180530 17:06:40.907" endtime="20180530 17:06:40.908" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20180530 17:06:38.834" endtime="20180530 17:06:40.909"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0">Critical Tests</stat>
+<stat pass="4" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" id="s1" name="Test2">Test2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
